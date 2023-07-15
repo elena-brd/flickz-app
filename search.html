@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/swiper.css">
+    <script src="lib/swiper.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/f0b3d42456.js" crossorigin="anonymous"></script>
+    <title>Flickz</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Flickz</a>
+            </div>
+            <div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/">Movies</a></li>
+                        <li><a href="/tv-shows.html">TV Shows</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- search form -->
+    <section class="search">
+        <div class="container">
+            <div class="alert"></div>
+            <form action="/search.html">
+                <div class="search-btn-radio">
+                    <input type="radio" name="type" id="movie" value="movie" checked>
+                    <label for="movie">Movies</label>
+                    <input type="radio" name="type" id="tv" value="tv">
+                    <label for="show">TV Show</label>
+                </div>
+                <div class="search-form">
+                    <input type="text" name="search-term" id="search-term">
+                    <button type="submit" class="btn-submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <header id="search-result-heading"></header>
+        <div class="alert"></div>
+        <div id="search-results"></div>
+        <div class="btn-pagination">
+            <div class="pages"></div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Flickz</a>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
